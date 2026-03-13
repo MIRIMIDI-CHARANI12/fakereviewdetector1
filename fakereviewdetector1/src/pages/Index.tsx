@@ -27,7 +27,7 @@ const Index = () => {
     await new Promise((r) => setTimeout(r, 1200));
 
     try {
-      const response = await fetch('http://192.168.0.38:3000/api/reviews/submit', {
+      const response = await fetch('https://fakereviewdetector1.onrender.com/api/reviews/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
